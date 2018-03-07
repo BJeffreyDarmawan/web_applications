@@ -79,6 +79,7 @@ body{
 }
 
 #changin_content{
+    display: none;
     padding: 70 10% 0 10%;
 }
 
@@ -92,6 +93,10 @@ body{
     font-size: 14px;
 }
 
+#changin_content table{
+    margin: 0 auto;
+}
+
 #changin_content table,td,th{
     border-collapse: collapse;
     border: 1pt;
@@ -101,7 +106,7 @@ body{
 
 #changin_content td{
     width: 250px;
-    min-height: 150px;
+    padding: 20px 10px;
 }
 
 .bottom{
