@@ -1,0 +1,95 @@
+@font-face{
+	font-family: 'fontSaya';
+	src: url('PT_Sans-Web-Regular.ttf');
+}
+
+body{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.top{
+    width: 100%;
+    height: auto;
+}
+
+.logo{
+    padding: 0;
+    padding: 30 0;
+}
+
+.logo img{
+    display: block;
+    margin: 0 auto;
+}
+
+.nav{
+    width: 100%;
+    height: auto;
+    font-family: 'fontSaya';
+    position: relative;
+}
+
+.nav ul{
+    list-style: none;
+    width: 65%;
+    height: 35;
+    margin: 0 auto;
+    padding: 0;
+    margin: auto;
+}
+
+.nav ul li{
+    display: inline-block;
+    width: 32.8%;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    margin: 0;
+    transform: translateY(28%);
+}
+
+
+
+.content{
+    margin: 0 auto;
+    margin-top: 15;
+    width: 65%;
+    min-height: 400px;
+    font-family: fontSaya;
+    font-size: 13px;
+}
+
+#changin_content{
+    padding: 70 0 0 0;
+}
+
+#changin_content p{
+    padding: 0 10%;
+}
+
+#changin_content table{
+    border: 1pt;
+    border-color: white;
+    border-style: solid double;
+}
+
+.bottom{
+    margin: 0;
+    padding: 20 0 10 0;
+    text-align: center;
+    font-size: 13px;
+}
