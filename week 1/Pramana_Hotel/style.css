@@ -92,10 +92,16 @@ body{
     font-size: 14px;
 }
 
-#changin_content table{
+#changin_content table,td,th{
+    border-collapse: collapse;
     border: 1pt;
     border-color: white;
-    border-style: solid double;
+    border-style: solid;
+}
+
+#changin_content td{
+    width: 250px;
+    min-height: 150px;
 }
 
 .bottom{
