@@ -56,10 +56,15 @@ body{
     text-decoration: none;
     color: white;
     width: 100%;
-    height: 100%;
+    height: 50%;
+    padding: 8.5px 0;
     vertical-align: middle;
     margin: 0;
-    transform: translateY(28%);
+}
+
+.nav ul li a:hover{
+    background: white;
+    color:black;
 }
 
 
@@ -74,11 +79,17 @@ body{
 }
 
 #changin_content{
-    padding: 70 0 0 0;
+    padding: 70 10% 0 10%;
 }
 
+/*
 #changin_content p{
     padding: 0 10%;
+}
+*/
+
+.title{
+    font-size: 14px;
 }
 
 #changin_content table{
