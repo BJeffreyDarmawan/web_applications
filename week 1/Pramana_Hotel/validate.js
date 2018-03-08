@@ -15,12 +15,12 @@ function validateForm() {
         return false;
     }
     
-    x = document.forms["myform"]["phone"].value - 0;
+    x = document.forms["myform"]["phone"].value;
     if (x.typeof == "string") {
-        alert("You inserted wrong phone number");
+        alert("Please insert correct phone number");
         return false;
-    } else if ( == "string") {
-        alert("You inserted wrong phone number");
+    } else if (x.length < 7) {
+        alert("Please insert correct phone number");
         return false;
     }
     
@@ -37,8 +37,6 @@ function validateForm() {
         y = y + "-" + d.getDate();
     
     x = document.forms["myform"]["date"].value;
-    alert(y);
-    alert(x);
     if(x < y) {
         alert("Date must be filled out");
         return false;
@@ -48,16 +46,25 @@ function validateForm() {
     if (x == "") {
         alert("Length of stay must be filled out");
         return false;
+    } else if (x <= 0) {
+        alert("Invalid length of stay");
+        return false;
     }
     
     x = document.forms["myform"]["room"].value;
-    if (x == "") {
+    if (x <= 0) {
         alert("Please choose room type");
         return false;
     }
+    
+    proceed();
 }
 
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email);
+}
+
+function proceed(){
+    $('#changin_content').html("<div style=\"text-align:center;\"><h1>Room Booked</h1><br/>You have successfully booked a room</div>");
 }
